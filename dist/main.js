@@ -1,1 +1,1 @@
-(async a=>{const e=await fetch("https://api.weatherapi.com/v1/forecast.json?key=af2f62539eb34d9ab3e195115232611&q=Valencia&days=5",{mode:"cors"}),o=await e.json();console.log(o)})();
+(()=>{"use strict";const e=async e=>{const t=await fetch(`https://api.weatherapi.com/v1/forecast.json?key=af2f62539eb34d9ab3e195115232611&q=${e}&days=3`,{mode:"cors"});return await t.json()};e("Valencia"),document.getElementById("location-search").addEventListener("keydown",(t=>{"Enter"===t.key&&(async t=>{const a=(e=>e.value||"")(t),n=await e(a);console.log(n)})(t.target)}))})();
