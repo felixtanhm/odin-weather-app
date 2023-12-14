@@ -16,4 +16,4 @@ const weather = (() => {
   return { processFormData, getForecast };
 })();
 
-export { weather };
+export default weather;

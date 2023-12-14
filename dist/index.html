@@ -6,9 +6,28 @@
     <title>Odin's Weather App</title>
   </head>
   <body>
-    <div id="content">
-      <input id="location-search" placeholder="Search location..." />
-    </div>
+    <header>
+      <h1>Odin's Weather App</h1>
+    </header>
+    <main>
+      <div>
+        <input
+          id="location-search"
+          class="input"
+          placeholder="Search location..."
+        />
+        <button id="location-btn" class="btn">Search</button>
+      </div>
+      <div id="search-result">
+        <div id="card">
+          <h2 id="location"></h2>
+          <p id="temperature"></p>
+          <p id="feels-like"></p>
+          <p id="humidity"></p>
+          <p id="wind"></p>
+        </div>
+      </div>
+    </main>
     <script src="main.js"></script>
   </body>
 </html>
